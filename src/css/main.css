@@ -3,13 +3,13 @@
 }
 .menu.open .logo-title {
   transform: rotate(0);
-  top: 2.5rem;
-  right: 2.9375rem;
+  top: 40px;
+  right: 47px;
   bottom: unset;
 }
 .menu.open .menu__top,
 .menu.open .menu__bottom {
-  padding: 1.875rem 2.6875rem;
+  padding: 30px 43px;
   align-items: flex-start;
 }
 .menu.open .menu__top {
@@ -17,14 +17,7 @@
 }
 .menu.open .menu__bottom {
   justify-content: flex-start;
-}
-.menu.open .menu__icon-bike {
-  width: 5.625rem;
-  height: 4.0625rem;
-}
-.menu.open .menu__icon-bike svg {
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
 }
 .menu.open .nav {
   transform: translateX(0);
@@ -32,92 +25,51 @@
 .menu.open .menu__icon-phone p {
   display: none;
 }
-
-@media (max-height: 55.25rem) {
-  .menu .logo-title {
-    font-size: 1.5rem;
-    bottom: 8.5rem;
-  }
+.menu.open .menu__bottom-footer {
+  display: block;
 }
-@media (max-height: 44.875rem) {
-  .menu .logo-title {
-    font-size: 1.2rem;
-    bottom: 7rem;
-  }
-}
-@media (max-height: 44.874rem) {
-  .menu .logo-title {
-    display: none;
-  }
-}
-@media (min-height: 62rem) {
-  .menu .logo-title {
-    font-size: 2.5rem;
-    bottom: 13rem;
-  }
-}
-@media (max-height: 53.75rem) {
-  .menu .nav__item {
-    font-size: 3rem;
-    line-height: normal;
-  }
-}
-@media (max-height: 40.5rem) {
-  .menu .nav__item {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .menu.open .menu__top {
     flex-direction: column;
   }
 }
-@media (max-width: 62rem) {
+@media (max-width: 992px) {
   .menu.open .logo-title {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .menu.open .logo-title {
     position: unset;
     align-self: center;
-    margin-top: 1rem;
+    margin-top: 16px;
     white-space: normal;
     text-align: center;
   }
 }
-@media (max-width: 25rem) {
+@media (max-width: 400px) {
   .menu.open .nav__item {
-    font-size: 2.5rem;
+    font-size: 40px;
     line-height: 110%;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .menu.open .nav {
     margin-left: 0;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .menu.open .menu__icon-close {
     bottom: unset;
-    top: 1.875rem;
-    width: 3.125rem;
-    height: 3.125rem;
+    top: 30px;
   }
   .menu.open .menu__icon-close svg {
     width: 100%;
     height: 100%;
   }
 }
-@media (max-width: 35.9375rem) {
+@media (max-width: 575px) {
   .menu.open {
     width: 100%;
-  }
-}
-
-@media (max-width: 62rem) {
-  .menu__icon-phone svg {
-    width: 5rem;
-    height: 5rem;
   }
 }
