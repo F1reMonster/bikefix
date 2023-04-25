@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		line-height: normal;
+	}
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+// @layer components {
+// 	.container {
+// 		@apply max-w-[1040px];
+// 	}
+// }

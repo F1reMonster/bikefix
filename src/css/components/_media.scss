@@ -1,0 +1,98 @@
+.menu {
+	.logo-title {
+		// 884px
+		@media (max-height: 55.25rem) {
+			font-size: 1.5rem;
+			bottom: 8.5rem;
+		}
+
+		// 718px
+		@media (max-height: 44.875rem) {
+			font-size: 1.2rem;
+			bottom: 7rem;
+		}
+
+		// 717.98px
+		@media (max-height: 44.874rem) {
+			display: none;
+		}
+
+		// 992px
+		@media (min-height: 62rem) {
+			font-size: 2.5rem;
+			bottom: 13rem;
+		}
+	}
+
+	.nav__item {
+		@media (max-height: 53.75rem) {
+			font-size: 3rem;
+			line-height: normal;
+		}
+
+		@media (max-height: 40.5rem) {
+			font-size: 2rem;
+		}
+	}
+
+	&.open {
+		.menu__top {
+			@media (max-width: 48rem) {
+				flex-direction: column;
+			}
+		}
+
+		.logo-title {
+			@media (max-width: 62rem) {
+				font-size: 2rem;
+			}
+
+			@media (max-width: 48rem) {
+				position: unset;
+				align-self: center;
+				margin-top: 1rem;
+				white-space: normal;
+				text-align: center;
+			}
+		}
+
+		.nav {
+			&__item {
+				@media (max-width: 25rem) {
+					font-size: 2.5rem;
+					line-height: 110%;
+				}
+			}
+			@media (max-width: 48rem) {
+				margin-left: 0;
+			}
+		}
+
+		.menu__icon-close {
+			@media (max-width: 48rem) {
+				bottom: unset;
+				top: 1.875rem;
+				width: 3.125rem;
+				height: 3.125rem;
+
+				svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		@media (max-width: 35.9375rem) {
+			width: 100%;
+		}
+	}
+}
+
+.menu__icon-phone {
+	@media (max-width: 62rem) {
+		svg {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+}

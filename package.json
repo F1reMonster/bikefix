@@ -1,0 +1,56 @@
+{
+  "name": "gulp-with-tailwindcss",
+  "version": "1.3.0",
+  "description": "TailwindCSS StarterKit with Gulp 4",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "latest",
+    "node-sass": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "latest",
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-file-include": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-postcss": "latest",
+    "gulp-purgecss": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-terser": "latest",
+    "gulp-webp": "latest",
+    "log-symbols": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "sass": "latest"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp prod",
+    "prod": "gulp prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjumjn/gulp-with-tailwindcss.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp4",
+    "tailwind",
+    "tailwindcss",
+    "sass"
+  ],
+  "author": "Manjunath G, modify by Hennadii L (FireMonster)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manjumjn/gulp-with-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/manjumjn/gulp-with-tailwindcss#readme"
+}
