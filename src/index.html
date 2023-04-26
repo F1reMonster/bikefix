@@ -4,42 +4,43 @@
 		@@include('html/components/_head.html', {title: "Main page"})
 	</head>
 
-	<body class="relative h-full w-full">
-		<div>
-			
-		</div>
+	<body class="relative h-full w-full overflow-clip">
 		<!-- header -->
 		@@include('html/components/_header.html')
 		<!--  ./header-->
 
-		<main class="relative flex h-full w-full flex-col before:absolute before:top-0 before:left-0 before:z-[-1] before:h-[44%] before:w-full before:bg-white after:absolute after:bottom-0 after:left-0 after:z-[-1] after:h-[56%] after:w-full after:bg-perano">
+		<main class="relative flex h-full w-full flex-col before:absolute before:left-0 before:top-0 before:z-[-1] before:h-[44%] before:w-full before:bg-white after:absolute after:bottom-0 after:left-0 after:z-[-1] after:h-[56%] after:w-full after:bg-perano">
 			<!-- menu -->
 			@@include('html/components/_menu.html')
 			<!-- ./menu -->
 
-			<div class="container relative z-10 min-h-[44%] pl-[16.875rem] pr-[3.75rem] pt-[6.25rem]">
-				<div class="flex items-center justify-between gap-[1rem]">
-					<h1 class="max-w-[50rem] bg-white/80 text-[4rem] leading-[4.6875rem] backdrop-blur-[1.25rem]">Amet minim mollit non deserunt ullamco</h1>
-					<button class="group relative">
-						<svg width="144" height="147" viewBox="0 0 144 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="container relative z-10 min-h-[44%] pl-[16.875rem] pr-[3.75rem] pt-[6.25rem] lg:pl-[9.375rem] sm:pl-[5.3125rem] sm:pt-[5rem]">
+				<div class="flex items-start justify-between gap-[1rem]">
+					<h1 class="max-w-[50rem] bg-white/80 text-[4rem] leading-[117%] backdrop-blur-[1.25rem] lg:text-[3rem] md:text-[2rem] smm:text-[1.5rem]">Amet minim mollit non deserunt ullamco</h1>
+					
+					<!-- login button -->
+					<button class="login group relative sm:absolute sm:top-[1.875rem] bg-white/50 backdrop-blur-[1.25rem] sm:right-[1.875rem] smm:right-1 rounded-[50%]">
+						<svg class="xlg:h-[6.25rem] xlg:w-[6.25rem] sm:h-[3rem] sm:w-[3rem]" width="144" height="147" viewBox="0 0 144 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path class="duration-300 ease-out group-hover:translate-x-1" d="M65.9878 98L95.9878 73.5L65.9878 49V67.375H11.9878V79.625H65.9878V98Z" fill="#232532" />
 							<path d="M77.9941 18.3689C70.8992 18.3488 63.871 19.766 57.3165 22.5385C50.7621 25.311 44.8117 29.3837 39.8101 34.5205L48.2941 43.1812C56.2261 35.084 66.7741 30.6189 77.9941 30.6189C89.2141 30.6189 99.7621 35.084 107.694 43.1812C115.626 51.2785 120 62.0462 120 73.5C120 84.9537 115.626 95.7215 107.694 103.819C99.7621 111.916 89.2141 116.381 77.9941 116.381C66.7741 116.381 56.2261 111.916 48.2941 103.819L39.8101 112.479C50.0041 122.892 63.5641 128.631 77.9941 128.631C92.424 128.631 105.984 122.892 116.178 112.479C126.378 102.073 132 88.2306 132 73.5C132 58.7694 126.378 44.9269 116.178 34.5205C111.176 29.3837 105.226 25.311 98.6716 22.5385C92.1171 19.766 85.0889 18.3488 77.9941 18.3689Z" fill="#232532" />
 						</svg>
-						<p class="absolute left-[50%] origin-top-left translate-x-[35%] rotate-[90deg] text-[20px]">Log in</p>
+						<p class="absolute left-[50%] origin-top-left translate-x-[35%] rotate-[90deg] whitespace-nowrap text-[20px] sm:hidden">Log in</p>
 					</button>
+					<!-- ./login button -->
 				</div>
 
-				<p class="relative mt-[50px] pl-[196px] text-[1.5625rem] text-indigo before:absolute before:left-0 before:top-[50%] before:h-[0.125rem] before:w-[8.5rem] before:translate-y-[-50%] before:bg-black">what are we doing</p>
+				<p class="relative mt-[3.125rem] pl-[12.25rem] text-[1.5625rem] text-indigo before:absolute before:left-0 before:top-[50%] before:h-[0.125rem] before:w-[8.5rem] before:translate-y-[-50%] before:bg-black md:before:w-[5rem] md:pl-[6.25rem] md:mt-1 smm:text-[1.25rem] smm:before:w-[1rem] smm:pl-5"><span class="backdrop-blur-[1.25rem] bg-white/80">what are we doing</span></p>
 
 				<!-- language switcher -->
 				@@include('html/components/_language-switcher.html')
 				<!-- ./language switcher -->
 			</div>
-			<div class="absolute bottom-[50px] left-[50%] max-h-[54.125rem] w-full max-w-[75rem] translate-x-[-50%] opacity-[0.66] mx-h860:max-w-[62.5rem] mx-h648:max-w-[50rem] mn-h992:max-w-[84.375rem]">
+			<div class="absolute bottom-[50px] left-[50%] max-h-[54.125rem] w-full max-w-[75rem] translate-x-[-50%] opacity-[0.66] xxlg:max-w-[59.375rem] mx-h860:max-w-[62.5rem] mx-h648:max-w-[50rem] mn-h992:max-w-[84.375rem] md:hidden">
 				<figure v-lazyload class="simg h-full w-full" background="">
-					<img class="simg-lazy fade-in" decoding="async" src="img/bike.webp" alt="bike" />
+					<img class="simg-lazy fade-in object-cover" decoding="async" src="img/bike.webp" alt="bike" />
 				</figure>
 			</div>
+			<div class="hidden md:block md:absolute md:inset-0 md:bg-bg-bike md:bg-center md:bg-cover md:bg-no-repeat md:opacity-[0.66]"></div>
 		</main>
 
 		<script src="./js/app.js"></script>

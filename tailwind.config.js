@@ -20,6 +20,8 @@ module.exports = {
 	darkMode: "media", // or 'media' or 'class'
 	theme: {
 		screens: {
+			xxlg: {max: "90rem"}, // 1440
+			xlg: {max: "75rem"}, // 1200
 			lg: { max: "62rem" }, // 992
 			md: { max: "48rem" }, // 768
 			mdd: { max: "35.9375rem" }, // 757
@@ -55,6 +57,9 @@ module.exports = {
 			fontFamily: {
 				roboto: ["Roboto"],
 			},
+			backgroundImage: {
+				'bg-bike' : "url('../img/bike.webp')",
+			}
 		},
 	},
 	variants: {
