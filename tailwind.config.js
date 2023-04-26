@@ -17,7 +17,7 @@ const plugins = Object.keys(allPlugins)
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{html,js,php}"],
-	darkMode: "media", // or 'media' or 'class'
+	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		screens: {
 			xxlg: {max: "90rem"}, // 1440
@@ -48,6 +48,7 @@ module.exports = {
 			},
 			boxShadow: {
 				custom: "inset 0px 4px 5px rgba(65, 99, 207, 0.29)",
+				darkcustom: "inset 0px 4px 5px rgba(255, 255, 255, 0.29)",
 			},
 			colors: {
 				charade: "#232532",
