@@ -25,6 +25,7 @@ module.exports = {
 			lg: { max: "62rem" }, // 992
 			md: { max: "48rem" }, // 768
 			mdd: { max: "35.9375rem" }, // 757
+			'w-600': { max: "37.5rem" }, // 600
 			sm: { max: "30rem" }, // 480
 			smm: { max: "25rem" }, // 400
 			lw: { max: "23.375rem" }, // 374
@@ -49,11 +50,22 @@ module.exports = {
 			boxShadow: {
 				custom: "inset 0px 4px 5px rgba(65, 99, 207, 0.29)",
 				darkcustom: "inset 0px 4px 5px rgba(255, 255, 255, 0.29)",
+				'modal-shadow': "0px 4px 12px rgba(66, 100, 208, 0.29)"
 			},
 			colors: {
 				charade: "#232532",
 				indigo: "#4163CF",
+				'indigo-500': "#4F6AC4",
 				perano: "#BDCBF6",
+				concrete: "#F3F3F3",
+				'silver-chalice': "#B0B0B0",
+				punch: "#DC3131",
+				tundora: '#454545',
+				'cod-gray': "#131313",
+				'cod-gray-500': "#2F2E2E",
+				mariner: "#1B74E4",
+				'mariner-500': "#4282D0"
+				
 			},
 			fontFamily: {
 				roboto: ["Roboto"],
