@@ -1,15 +1,31 @@
+const options = require("./config"); //options from config.js
+
+const allPlugins = {
+	typography: require("@tailwindcss/typography"),
+	forms: require("@tailwindcss/forms"),
+	containerQueries: require("@tailwindcss/container-queries"),
+};
+
+const plugins = Object.keys(allPlugins)
+	.filter((k) => options.plugins[k])
+	.map((k) => {
+		if (k in options.plugins && options.plugins[k]) {
+			return allPlugins[k];
+		}
+	});
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	// mode: "jit", // Just-In-Time Compiler
-	content: ["./src/**/*.html"],
+	content: ["./src/**/*.{html,js,php}"],
 	darkMode: "media", // or 'media' or 'class'
 	theme: {
 		screens: {
-			lg: { max: "992px" },
-			md: { max: "768px" },
-			mdd: { max: "575px" },
-			sm: { max: "480px" },
-			smm: { max: "400px" },
-			lw: { max: "374px" },
+			lg: { max: "62rem" }, // 992
+			md: { max: "48rem" }, // 768
+			mdd: { max: "35.9375rem" }, // 757
+			sm: { max: "30rem" }, // 480
+			smm: { max: "25rem" }, // 400
+			lw: { max: "23.375rem" }, // 374
 		},
 		container: {
 			padding: "10px",
@@ -18,15 +34,15 @@ module.exports = {
 		extend: {
 			screens: {
 				// max-height
-				"mx-h884": { raw: "(max-height: 884px)" },
-				"mx-h860": { raw: "(max-height: 860px)" },
-				"mx-h718": { raw: "(max-height: 718px)" },
-				"mx-h717": { raw: "(max-height: 717px)" },
-				"mx-h648": { raw: "(max-height: 648px)" },
-				"mx-h550": { raw: "(max-height: 550px)" },
-				"mx-h450": { raw: "(max-height: 450px)" },
+				"mx-h884": { raw: "(max-height: 55.25rem)" }, // 884
+				"mx-h860": { raw: "(max-height: 53.75rem)" }, // 860
+				"mx-h718": { raw: "(max-height: 44.875rem)" }, // 718
+				"mx-h717": { raw: "(max-height: 44.8125rem)" }, // 717
+				"mx-h648": { raw: "(max-height: 40.5rem)" }, // 648
+				"mx-h550": { raw: "(max-height: 34.375rem)" }, // 550
+				"mx-h450": { raw: "(max-height: 28.125rem)" }, // 450
 				// min-height
-				"mn-h992": { raw: "(min-height: 992px)" },
+				"mn-h992": { raw: "(min-height: 62rem)" }, // 992
 			},
 			boxShadow: {
 				custom: "inset 0px 4px 5px rgba(65, 99, 207, 0.29)",
@@ -36,10 +52,13 @@ module.exports = {
 				indigo: "#4163CF",
 				perano: "#BDCBF6",
 			},
+			fontFamily: {
+				roboto: ["Roboto"],
+			},
 		},
 	},
 	variants: {
 		extend: {},
 	},
-	plugins: [require("@tailwindcss/forms"), require("prettier-plugin-tailwindcss")],
+	plugins: plugins,
 };

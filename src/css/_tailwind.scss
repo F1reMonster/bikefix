@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		line-height: normal;
+	}
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+@layer components {
+	// .container {
+	// 	@apply max-w-[1040px];
+	// }
+
+	.header__menu {
+		a {
+			@apply relative bg-white/80 backdrop-blur-[1.25rem] after:absolute after:bottom-0 after:left-0 after:h-[0.0625rem] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full;
+		}
+	}
+
+	.nav {
+		li {
+			@apply text-[64px] leading-[4.6875rem] md:text-[2.5rem] md:leading-[110%] mx-h860:text-[3rem] mx-h860:leading-[110%] mx-h648:text-[2rem];
+		}
+
+		a {
+			@apply relative after:absolute after:bottom-0 after:left-0 after:h-[0.0625rem] after:w-0 after:bg-white after:duration-300 after:ease-out hover:after:w-full lw:text-[2rem];
+		}
+	}
+
+	
+}

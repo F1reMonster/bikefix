@@ -5,23 +5,21 @@
 	</head>
 
 	<body class="relative h-full w-full">
-		<header class="absolute top-[40px] right-[320px] z-[11]">
-			<div class="header__menu">
-				<ul class="header__menu-list flex gap-[176px]">
-					<li class="text-[18px]"><a href="#" class="relative bg-white/80 backdrop-blur-[20px] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full">Benefits</a></li>
-					<li class="text-[18px]"><a href="#" class="relative bg-white/80 backdrop-blur-[20px] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full">About us</a></li>
-					<li class="text-[18px]"><a href="#" class="relative bg-white/80 backdrop-blur-[20px] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full">Tariffs</a></li>
-				</ul>
-			</div>
-		</header>
+		<div>
+			
+		</div>
+		<!-- header -->
+		@@include('html/components/_header.html')
+		<!--  ./header-->
+
 		<main class="relative flex h-full w-full flex-col before:absolute before:top-0 before:left-0 before:z-[-1] before:h-[44%] before:w-full before:bg-white after:absolute after:bottom-0 after:left-0 after:z-[-1] after:h-[56%] after:w-full after:bg-perano">
 			<!-- menu -->
 			@@include('html/components/_menu.html')
 			<!-- ./menu -->
 
-			<div class="container relative z-10 pl-[270px] pr-[60px] pt-[100px] min-h-[44%]">
-				<div class="flex items-center justify-between gap-[16px]">
-					<h1 class="max-w-[900px] bg-white/80 text-[64px] leading-[75px] backdrop-blur-[20px]">Amet minim mollit non deserunt ullamco</h1>
+			<div class="container relative z-10 min-h-[44%] pl-[16.875rem] pr-[3.75rem] pt-[6.25rem]">
+				<div class="flex items-center justify-between gap-[1rem]">
+					<h1 class="max-w-[50rem] bg-white/80 text-[4rem] leading-[4.6875rem] backdrop-blur-[1.25rem]">Amet minim mollit non deserunt ullamco</h1>
 					<button class="group relative">
 						<svg width="144" height="147" viewBox="0 0 144 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path class="duration-300 ease-out group-hover:translate-x-1" d="M65.9878 98L95.9878 73.5L65.9878 49V67.375H11.9878V79.625H65.9878V98Z" fill="#232532" />
@@ -30,65 +28,14 @@
 						<p class="absolute left-[50%] origin-top-left translate-x-[35%] rotate-[90deg] text-[20px]">Log in</p>
 					</button>
 				</div>
-				<p class="relative mt-[50px] pl-[196px] text-[25px] text-indigo before:absolute before:left-0 before:top-[50%] before:h-[2px] before:w-[136px] before:translate-y-[-50%] before:bg-black">what are we doing</p>
 
-				<div class="lang-swither absolute bottom-0 right-[60px] ">
-					<!-- <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-900">Assigned to</label> -->
-					<div class="relative mt-2 w-[80px]">
-						<button type="button" class="focus:ring-indigo-500 relative w-full cursor-default rounded-md bg-white py-2 pl-1 pr-1.5 text-left text-gray-900  focus:outline-none focus:ring-2 sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
-							<span class="flex items-center justify-center">
-								
-								<span class="block truncate uppercase">Ua</span>
-							</span>
-							<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-								<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.4876 0.500055L0.904228 15.5442L18.2245 15.4555L9.4876 0.500055ZM11.0592 14.4921L11.0567 13.9922L8.05671 14.0076L8.05927 14.5075L11.0592 14.4921Z" fill="black"/>
-									</svg>
-									
-							</span>
-						</button>
+				<p class="relative mt-[50px] pl-[196px] text-[1.5625rem] text-indigo before:absolute before:left-0 before:top-[50%] before:h-[0.125rem] before:w-[8.5rem] before:translate-y-[-50%] before:bg-black">what are we doing</p>
 
-						<!--
-						Select popover, show/hide based on select state.
-						Entering: ""
-							From: ""
-							To: ""
-						Leaving: "transition ease-in duration-100"
-							From: "opacity-100"
-							To: "opacity-0"
-					-->
-						<ul class="absolute z-20 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-							<!--
-							Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-							Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
-						-->
-							<li class="relative cursor-default select-none py-2 pl-1 pr-1.5 text-gray-900 hover:shadow-custom" id="listbox-option-0" role="option">
-								<div class="flex items-center justify-center">
-									
-									<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-									<span class="block truncate font-normal uppercase">En</span>
-								</div>
-
-								
-								
-							</li>
-							<li class="relative cursor-default select-none py-2 pl-1 pr-1.5 text-gray-900 hover:shadow-custom" id="listbox-option-0" role="option">
-								<div class="flex items-center justify-center">
-									
-									<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-									<span class="block truncate font-normal uppercase">Fr</span>
-								</div>
-
-								
-								
-							</li>
-
-							<!-- More items... -->
-						</ul>
-					</div>
-				</div>
+				<!-- language switcher -->
+				@@include('html/components/_language-switcher.html')
+				<!-- ./language switcher -->
 			</div>
-			<div class="absolute bottom-[50px] left-[50%] max-h-[866px] w-full max-w-[1200px] translate-x-[-50%] opacity-[0.66] mx-h860:max-w-[1000px] mx-h648:max-w-[800px] mn-h992:max-w-[1350px]">
+			<div class="absolute bottom-[50px] left-[50%] max-h-[54.125rem] w-full max-w-[75rem] translate-x-[-50%] opacity-[0.66] mx-h860:max-w-[62.5rem] mx-h648:max-w-[50rem] mn-h992:max-w-[84.375rem]">
 				<figure v-lazyload class="simg h-full w-full" background="">
 					<img class="simg-lazy fade-in" decoding="async" src="img/bike.webp" alt="bike" />
 				</figure>
