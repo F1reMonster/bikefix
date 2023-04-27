@@ -20,12 +20,16 @@ module.exports = {
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		screens: {
+			exlg: {max: "104.6875rem"}, // 1675
 			xxlg: {max: "90rem"}, // 1440
+			xslg: {max: "87.4375rem"}, // 1399
 			xlg: {max: "75rem"}, // 1200
+			xmlg: {max: "1100px"}, // 1100
 			lg: { max: "62rem" }, // 992
 			md: { max: "48rem" }, // 768
 			mdd: { max: "35.9375rem" }, // 757
 			'w-600': { max: "37.5rem" }, // 600
+			exmd: { max: "36rem" }, // 576
 			sm: { max: "30rem" }, // 480
 			smm: { max: "25rem" }, // 400
 			lw: { max: "23.375rem" }, // 374
@@ -55,7 +59,7 @@ module.exports = {
 			colors: {
 				charade: "#232532",
 				indigo: "#4163CF",
-				'indigo-500': "#4F6AC4",
+				'indigo-500': "#6F89DB",
 				perano: "#BDCBF6",
 				concrete: "#F3F3F3",
 				'silver-chalice': "#B0B0B0",
@@ -71,7 +75,11 @@ module.exports = {
 				roboto: ["Roboto"],
 			},
 			backgroundImage: {
-				'bg-bike' : "url('../img/bike.webp')",
+				'bg-bike': "url('../img/bike.webp')",
+				'select-arrow': "url('../img/select-arrow.svg')"
+			},
+			backgroundPosition: {
+				'select-arrow': "right 1rem center"
 			}
 		},
 	},

@@ -18,7 +18,7 @@
 
 	.header__menu {
 		a {
-			@apply relative bg-white/80 backdrop-blur-[1.25rem] after:absolute after:bottom-0 after:left-0 after:h-[0.0625rem] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full dark:bg-black/80 dark:after:bg-white dark:text-white;
+			@apply relative  backdrop-blur-[1.25rem] after:absolute after:bottom-0 after:left-0 after:h-[0.0625rem] after:w-0 after:bg-charade after:duration-300 after:ease-out hover:after:w-full  dark:after:bg-white dark:text-white;
 		}
 	}
 
