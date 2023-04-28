@@ -8,3 +8,19 @@
 section {
 	// @apply mt-[50px] lg:mt-[30px];
 }
+
+
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #6F89DB;
+	border-radius: 5px;
+}
