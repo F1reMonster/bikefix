@@ -69,7 +69,15 @@ module.exports = {
 				'cod-gray': "#131313",
 				'cod-gray-500': "#2F2E2E",
 				mariner: "#1B74E4",
-				'mariner-500': "#4282D0"
+				'mariner-500': "#4282D0",
+				'apple-green': '#D8F0E3',
+				como: '#4C8269',
+				pippin: '#FFDEE0',
+				cabaret: '#D04768',
+				zumthor: '#E5EEFF',
+				'royal-blue': '#337FF0',
+				
+
 				
 				
 			},
