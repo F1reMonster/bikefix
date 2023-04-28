@@ -20,6 +20,7 @@ module.exports = {
 	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		screens: {
+			'min-hd': {min: "120rem"}, // 1920
 			exlg: {max: "104.6875rem"}, // 1675
 			xxlg: {max: "90rem"}, // 1440
 			xslg: {max: "87.4375rem"}, // 1399
