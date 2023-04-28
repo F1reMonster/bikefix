@@ -70,16 +70,19 @@ module.exports = {
 				mariner: "#1B74E4",
 				'mariner-500': "#4282D0"
 				
+				
 			},
 			fontFamily: {
 				roboto: ["Roboto"],
 			},
 			backgroundImage: {
 				'bg-bike': "url('../img/bike.webp')",
+				'bike-benefits': "url('../img/bike.webp')",
 				'select-arrow': "url('../img/select-arrow.svg')"
 			},
 			backgroundPosition: {
-				'select-arrow': "right 1rem center"
+				'select-arrow': "right 1rem center",
+				'bike-benefits': 'right 5rem center'
 			}
 		},
 	},
