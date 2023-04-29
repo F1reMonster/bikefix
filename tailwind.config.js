@@ -55,7 +55,8 @@ module.exports = {
 			boxShadow: {
 				custom: "inset 0px 4px 5px rgba(65, 99, 207, 0.29)",
 				darkcustom: "inset 0px 4px 5px rgba(255, 255, 255, 0.29)",
-				'modal-shadow': "0px 4px 12px rgba(66, 100, 208, 0.29)"
+				'modal-shadow': "0px 4px 12px rgba(66, 100, 208, 0.29)",
+				message: "0px 4px 18px rgba(137, 158, 225, 0.28)",
 			},
 			colors: {
 				charade: "#232532",
@@ -76,10 +77,7 @@ module.exports = {
 				cabaret: '#D04768',
 				zumthor: '#E5EEFF',
 				'royal-blue': '#337FF0',
-				
-
-				
-				
+				'chetwode-blue': "#899EE1"		
 			},
 			fontFamily: {
 				roboto: ["Roboto"],

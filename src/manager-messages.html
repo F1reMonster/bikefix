@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- for dark mode add class "dark" -->
+<html lang="en" class="">
+	<head>
+		@@include('html/components/_head.html', {title: "Manager → User page"})
+	</head>
+
+	<body class="relative flex h-screen flex-col overflow-x-hidden bg-white dark:bg-black">
+		<!-- header -->
+		@@include('html/components/_header-service.html')
+		<!--  ./header-->
+
+		<main class="relative flex flex-auto">
+			<!-- menu -->
+			@@include('html/components/_menu-service.html')
+			<!-- ./menu -->
+
+			<div class="container relative flex flex-col pb-[2rem] pl-[11.25rem] pr-[11.25rem] pt-[1.4375rem] min-hd:max-w-[95.875rem] min-hd:pl-[0.625rem] min-hd:pr-[0.625rem] lg:pl-[7.5rem] lg:pr-[0.625rem] exmd:pb-[5.5rem] sm:pl-[4.625rem]">
+				<div class="flex flex-auto gap-[2.125rem]">
+					<div class="w-[19.5625rem] rounded-[1.0625rem] bg-chetwode-blue p-[1.875rem]">
+						<div class="sticky top-[1.875rem]">
+							<div class="flex flex-col items-center justify-center">
+								<div class="h-[8.625rem] w-[8.625rem] flex-shrink-0 overflow-hidden rounded-[50%]">
+									<figure v-lazyload class="simg h-full w-full" background="">
+										<img class="simg-lazy fade-in object-cover" decoding="async" src="img/user-3.jpg" alt="user" />
+									</figure>
+								</div>
+								<div class="mt-[3.25rem]">Alisha</div>
+								<div>name@email.com</div>
+								<ul class="mt-[3.25rem] flex flex-col items-center gap-[1.625rem]">
+									<li class="relative flex items-center gap-8">
+										<a class="underline hover:underline" href="#">Messages</a>
+										<span class="absolute -right-8 flex h-6 w-6 items-center justify-center rounded-[50%] bg-punch text-[12px] text-white">2</span>
+									</li>
+									<li><a class="hover:underline" href="#">Order</a></li>
+									<li><a class="hover:underline" href="#">Statistics</a></li>
+								</ul>
+
+								<button title="Return" aria-label="Return button" class="group mt-[1.625rem]">
+									<svg class="sm:h-6 sm:w-6" width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path class="duration-300 ease-out group-hover:fill-indigo-500 dark:fill-white" d="M24 0C10.7452 0 0 10.969 0 24.5C0 38.031 10.7452 49 24 49C37.2548 49 48 38.031 48 24.5C48 10.969 37.2548 0 24 0Z" fill="#232532" />
+										<path class="duration-300 ease-out dark:fill-black dark:group-hover:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M34 25C34 24.6591 33.8749 24.3321 33.6522 24.091C33.4296 23.85 33.1275 23.7145 32.8126 23.7145H19.0558L24.1544 18.1972C24.3773 17.9558 24.5026 17.6285 24.5026 17.2871C24.5026 16.9457 24.3773 16.6184 24.1544 16.377C23.9314 16.1356 23.629 16 23.3137 16C22.9984 16 22.696 16.1356 22.473 16.377L15.3488 24.0899C15.2383 24.2093 15.1505 24.3511 15.0907 24.5073C15.0308 24.6635 15 24.8309 15 25C15 25.1691 15.0308 25.3365 15.0907 25.4927C15.1505 25.6489 15.2383 25.7907 15.3488 25.9101L22.473 33.623C22.696 33.8644 22.9984 34 23.3137 34C23.629 34 23.9314 33.8644 24.1544 33.623C24.3773 33.3816 24.5026 33.0543 24.5026 32.7129C24.5026 32.3715 24.3773 32.0442 24.1544 31.8028L19.0558 26.2855H32.8126C33.1275 26.2855 33.4296 26.15 33.6522 25.909C33.8749 25.6679 34 25.3409 34 25Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="relative flex w-full flex-col">
+						<div class="flex-auto pb-[10.625rem]">
+							<div class="overflow-y-auto px-5 py-5">
+								<div class="flex max-w-[80%] items-center gap-[2.5rem] rounded-[1.1875rem] p-[1.875rem] text-[20px] leading-[115%] shadow-message">
+									<p>02/03/2020</p>
+									<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+								</div>
+								<div class="mt-[2.5rem] flex flex-row-reverse">
+									<div class="flex max-w-[80%] items-center gap-[2.5rem] rounded-[1.1875rem] p-[1.875rem] text-[20px] leading-[115%] shadow-message">
+										<p>02/03/2020</p>
+										<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+									</div>
+								</div>
+
+								<div class="mt-[2.5rem] flex max-w-[80%] items-center gap-[2.5rem] rounded-[1.1875rem] p-[1.875rem] text-[20px] leading-[115%] shadow-message">
+									<p>02/03/2020</p>
+									<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fixed bottom-0 left-[27vw] h-40 w-[61vw] rounded-tl-[3.125rem] rounded-tr-[3.125rem] bg-white pb-1 pl-8 pr-[9.375rem] pt-8 shadow-custom xxlg:left-[34vw] xxlg:w-[52vw]">
+				<textarea class="h-full w-full resize-none border-none bg-transparent placeholder-silver-chalice shadow-transparent outline-none active:shadow-transparent" placeholder="Message" name="message"></textarea>
+				<button class="absolute right-[40px] top-[40%]">
+					<svg width="55" height="53" viewBox="0 0 55 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.5C0 27.5039 0.362124 28.4666 1.00671 29.1764C1.65129 29.8862 2.52554 30.285 3.43712 30.285H43.2595L28.5006 46.5304C27.8552 47.2411 27.4926 48.2051 27.4926 49.2102C27.4926 50.2153 27.8552 51.1793 28.5006 51.89C29.146 52.6007 30.0213 53 30.934 53C31.8468 53 32.7221 52.6007 33.3675 51.89L53.9902 29.1798C54.3103 28.8282 54.5643 28.4105 54.7375 27.9507C54.9108 27.4908 55 26.9979 55 26.5C55 26.0021 54.9108 25.5092 54.7375 25.0493C54.5643 24.5895 54.3103 24.1718 53.9902 23.8202L33.3675 1.11001C32.7221 0.399281 31.8468 0 30.934 0C30.0213 0 29.146 0.399281 28.5006 1.11001C27.8552 1.82074 27.4926 2.78469 27.4926 3.78981C27.4926 4.79493 27.8552 5.75888 28.5006 6.46961L43.2595 22.715H3.43712C2.52554 22.715 1.65129 23.1137 1.00671 23.8236C0.362124 24.5334 0 25.4961 0 26.5Z" fill="#232532" />
+					</svg>
+				</button>
+			</div>
+		</main>
+	</body>
+</html>
