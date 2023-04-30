@@ -36,7 +36,7 @@ module.exports = {
 			lw: { max: "23.375rem" }, // 374
 		},
 		container: {
-			padding: "10px",
+			padding: "0.625rem",
 			center: true,
 		},
 		extend: {
