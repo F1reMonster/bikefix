@@ -16,8 +16,8 @@
 			<!-- ./menu -->
 
 			<!-- back button -->
-			<button class="group lg:h-[3rem] lg:w-[3rem] w-[6.25rem] h-[6.25rem] absolute left-[16.875rem] top-[4.75rem] z-[11] rounded-[50%] backdrop-blur-[1.25rem] sm:top-[1.875rem] xlg:left-[11.25rem] lg:left-[7.5rem] sm:left-[4.625rem]" title="back" aria-label="Back button">
-				<svg class="w-full h-full" width="105" height="107" viewBox="0 0 105 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<button class="group absolute left-[16.875rem] top-[4.75rem] z-[11] h-[6.25rem] w-[6.25rem] rounded-[50%] backdrop-blur-[1.25rem] xlg:left-[11.25rem] lg:left-[7.5rem] lg:h-[3rem] lg:w-[3rem] sm:left-[4.625rem] sm:top-[1.875rem]" title="back" aria-label="Back button">
+				<svg class="h-full w-full" width="105" height="107" viewBox="0 0 105 107" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path class="duration-300 ease-out group-hover:fill-indigo-500 dark:fill-white" d="M52.5 107C81.4949 107 105 83.0472 105 53.5C105 23.9528 81.4949 0 52.5 0C23.505 0 0 23.9528 0 53.5C0 83.0472 23.505 107 52.5 107Z" fill="#232532" />
 					<path d="M79.3334 57.4166L37.7355 57.4166L56.8688 76.5499L52.0001 81.3333L24.6667 53.9999L52.0001 26.6666L56.8688 31.4499L37.7355 50.5833L79.3334 50.5833V57.4166Z" fill="white" />
 				</svg>
@@ -25,8 +25,8 @@
 			<!-- ./back button -->
 
 			<!-- login button -->
-			<button class="w-[115px] h-[115px]  lg:h-[3.5rem] lg:w-[3.5rem] login group absolute right-[3.75rem] top-[4.5rem] z-[11] rounded-[50%] backdrop-blur-[1.25rem] sm:right-[1rem] sm:top-[1.5rem]" tittle="Login" aria-label="Login">
-				<svg class="w-full h-full" width="144" height="147" viewBox="0 0 144 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<button class="login group absolute right-[3.75rem] top-[4.5rem] z-[11] h-[115px] w-[115px] rounded-[50%] backdrop-blur-[1.25rem] lg:h-[3.5rem] lg:w-[3.5rem] sm:right-[1rem] sm:top-[1.5rem]" tittle="Login" aria-label="Login">
+				<svg class="h-full w-full" width="144" height="147" viewBox="0 0 144 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path class="duration-300 ease-out group-hover:translate-x-1 group-hover:fill-indigo-500 dark:fill-white" d="M65.9878 98L95.9878 73.5L65.9878 49V67.375H11.9878V79.625H65.9878V98Z" fill="#232532" />
 					<path class="duration-300 ease-out group-hover:fill-indigo-500 dark:fill-white" d="M77.9941 18.3689C70.8992 18.3488 63.871 19.766 57.3165 22.5385C50.7621 25.311 44.8117 29.3837 39.8101 34.5205L48.2941 43.1812C56.2261 35.084 66.7741 30.6189 77.9941 30.6189C89.2141 30.6189 99.7621 35.084 107.694 43.1812C115.626 51.2785 120 62.0462 120 73.5C120 84.9537 115.626 95.7215 107.694 103.819C99.7621 111.916 89.2141 116.381 77.9941 116.381C66.7741 116.381 56.2261 111.916 48.2941 103.819L39.8101 112.479C50.0041 122.892 63.5641 128.631 77.9941 128.631C92.424 128.631 105.984 122.892 116.178 112.479C126.378 102.073 132 88.2306 132 73.5C132 58.7694 126.378 44.9269 116.178 34.5205C111.176 29.3837 105.226 25.311 98.6716 22.5385C92.1171 19.766 85.0889 18.3488 77.9941 18.3689Z" fill="#232532" />
 				</svg>
@@ -42,21 +42,40 @@
 					<form name="delivery_form">
 						<div class="mt-6">
 							<div class="w-full">
-
 								<!-- card field -->
 								<div class="relative mt-[2.25rem]">
-									<label class="flex w-full items-center justify-between rounded-[0.9375rem] bg-white pl-[1.25rem] pr-[3.5rem] py-[0.625rem] h-[9.6875rem] lg:h-[6.875rem] sm:pr-[1.25rem] sm:h-auto cursor-pointer">
+									<label class="mb-[1rem] flex h-[6.875rem] w-full cursor-pointer items-center justify-between rounded-[0.9375rem] bg-white py-[0.625rem] pl-[1.25rem] pr-[3.5rem] lg:h-[6.875rem] sm:h-auto sm:pr-[1.25rem]">
 										<div class="flex items-center gap-[1.125rem] sm:flex-col sm:gap-[0.5rem]">
-											<figure v-lazyload class="simg h-[9.1875rem] w-[9.1875rem] lg:w-[6.25rem] lg:h-[6.25rem] sm:w-[3.75rem] sm:h-[3.75rem]" background="">
+											<figure v-lazyload class="simg h-[6.25rem] w-[6.25rem] lg:h-[6.25rem] lg:w-[6.25rem] sm:h-[3.75rem] sm:w-[3.75rem]" background="">
 												<img class="simg-lazy fade-in" decoding="async" src="img/mono-logo.png" alt="monobank logo" />
 											</figure>
 
 											<div class="text-[1.0625rem]">monobank</div>
 										</div>
-										<input type="radio" name="card_number" value="" name="bank" class="w-[2.5rem] h-[2.5rem] text-blue-600 bg-white border-indigo focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 sm:w-[1.5rem] sm:h-[1.5rem]"  />
+										<input type="radio" name="card_number" value="" name="bank" class="h-[2.5rem] w-[2.5rem] border-indigo bg-white text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 sm:h-[1.5rem] sm:w-[1.5rem]" />
+									</label>
+
+									<label class="mb-[1rem] flex h-[6.875rem] w-full cursor-pointer items-center justify-between rounded-[0.9375rem] bg-white py-[0.625rem] pl-[1.25rem] pr-[3.5rem] lg:h-[6.875rem] sm:h-auto sm:pr-[1.25rem]">
+										<div class="flex items-center gap-[1.125rem] sm:flex-col sm:gap-[0.5rem]">
+											<figure v-lazyload class="simg h-[6.25rem] w-[6.25rem] lg:h-[6.25rem] lg:w-[6.25rem] sm:h-[3.75rem] sm:w-[3.75rem] flex" background="">
+												<img class="simg-lazy fade-in" decoding="async" src="img/google-pay.svg" alt="monobank logo" />
+											</figure>
+
+											<div class="text-[1.0625rem]"></div>
+										</div>
+										<input type="radio" name="card_number" value="" name="bank" class="h-[2.5rem] w-[2.5rem] border-indigo bg-white text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 sm:h-[1.5rem] sm:w-[1.5rem]" />
+									</label>
+									<label class="flex h-[6.875rem] w-full cursor-pointer items-center justify-between rounded-[0.9375rem] bg-white py-[0.625rem] pl-[1.25rem] pr-[3.5rem] lg:h-[6.875rem] sm:h-auto sm:pr-[1.25rem]">
+										<div class="flex items-center gap-[1.125rem] sm:flex-col sm:gap-[0.5rem]">
+											<figure v-lazyload class="simg h-[6.25rem] w-[6.25rem] lg:h-[6.25rem] lg:w-[6.25rem] sm:h-[3.75rem] sm:w-[3.75rem] flex" background="">
+												<img class="simg-lazy fade-in" decoding="async" src="img/Apple_Pay_logo.svg" alt="apple pay logo" />
+											</figure>
+
+											<div class="text-[1.0625rem]"></div>
+										</div>
+										<input type="radio" name="card_number" value="" name="bank" class="h-[2.5rem] w-[2.5rem] border-indigo bg-white text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600 sm:h-[1.5rem] sm:w-[1.5rem]" />
 									</label>
 								</div>
-								
 
 								<!-- card field -->
 								<div class="relative mt-[2.25rem]">
@@ -68,7 +87,7 @@
 								<div class="relative">
 									<input type="text" name="date" class="block h-[3.75rem] w-full rounded-[0.9375rem] border border-white bg-white px-[1.25rem] py-[0.625rem] text-[1.0625rem] text-gray-900 placeholder-silver-chalice focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="30/10/2020" />
 								</div>
-								
+
 								<div class="relative">
 									<input type="password" name="cvv2" class="block h-[3.75rem] w-full rounded-[0.9375rem] border border-white bg-white px-[1.25rem] py-[0.625rem] text-[1.0625rem] text-gray-900 placeholder-silver-chalice focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="CVV2" />
 								</div>
